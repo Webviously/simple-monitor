@@ -1,0 +1,21 @@
+{
+    "name": "sbrendtro/simple-monitor",
+    "description": "Simple server monitors and a runner",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Steven Brendtro",
+            "email": "steven.brendtro@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "simplemonitor": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
