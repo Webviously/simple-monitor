@@ -2,6 +2,8 @@
 
 namespace simplemonitor\monitors;
 
+// The monitor parent class
+
 abstract class Monitor 
 {
 	public function __construct($config=[])
@@ -27,6 +29,11 @@ abstract class Monitor
 		$this->status = $this->failure_status;
 		$this->message = $msg;
 	}
+	public function info($msg)
+	{
+		$this->status = $this->info_status;
+		$this->message = $msg;
+	}
 	public function export()
 	{
 		return [
@@ -43,4 +50,5 @@ abstract class Monitor
 	public $message;
 	public $failure_status = 'WARN';
 	public $success_status = 'OK';
+	public $info_status = 'INFO';
 }

@@ -36,5 +36,7 @@ class ReplicationMonitor extends Monitor
 
 		if ( $seconds_behind_master > $this->threshold )
 			$this->fail( 'Slave is more than ' . $this->threshold . ' seconds behind master.' );
+		else
+			$this->ok();
 	}
 }

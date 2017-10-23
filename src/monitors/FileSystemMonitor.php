@@ -15,6 +15,8 @@ class FileSystemMonitor extends Monitor
 
 		if ( $percent_free < $this->threshold )
 			$this->fail( 'Disk space critical (' . number_format($percent_free,2) . '%)' );
+		else
+			$this->ok();
 	}
 }
 	
