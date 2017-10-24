@@ -9,7 +9,10 @@
             "email": "steven.brendtro@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "zetacomponents/system-information": "^1.1"
+    },
     "autoload": {
         "psr-0": {
             "simplemonitor": "src/"
